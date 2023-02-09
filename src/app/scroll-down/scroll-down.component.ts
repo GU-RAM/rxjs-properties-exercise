@@ -7,10 +7,8 @@ import { from, takeUntil, Subject, take, skip } from 'rxjs';
   styleUrls: ['./scroll-down.component.scss'],
 })
 export class ScrollDownComponent {
-  currentAnimals: any[] = [];
+  currentAnimals: string[] = [];
   subject: any = new Subject();
-  count = 0;
-
   animals = from([
     'dog',
     'cat',

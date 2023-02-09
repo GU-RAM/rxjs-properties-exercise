@@ -22,7 +22,6 @@ export class scrollDownDirective {
         this.container.nativeElement.clientHeight ===
         this.container.nativeElement.scrollHeight
     ) {
-      console.log();
       this.onBottom.emit();
     }
   }

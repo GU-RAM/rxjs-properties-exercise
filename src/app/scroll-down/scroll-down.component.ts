@@ -126,9 +126,9 @@ export class ScrollDownComponent {
       this.amountOfItemsToDisplay(this.currentAnimals.length);
     });
   }
-  amountOfItemsToDisplay(amount: any): any {
+  amountOfItemsToDisplay(amount: number): void {
     if (600 - (150 * amount) / 4 <= 0) {
-      return this.subject.next('stop');
+      this.subject.next('stop');
     }
   }
 

@@ -20,13 +20,13 @@ export class PopulateJobsPersonsComponent implements OnInit {
     { id: 3, name: 'temur', lastname: 'takalandze', jobId: 1 },
   ];
 
-  getPeople(job: string[]): Observable<any> {
+  getPeople(job: string[]): Observable<string[]> {
     return of(job).pipe(
       switchMap((jobNameArr) =>
         of(this.jobs.filter((job) => jobNameArr.includes(job.name)))
       ),
       map((chosenJobsArr) => {
-        return chosenJobsArr.map((job: any) => {
+        return chosenJobsArr.map((job: Job) => {
           let jobName = job.name;
           let personIdentified = this.people.filter(
             (person) => person.jobId === job.id

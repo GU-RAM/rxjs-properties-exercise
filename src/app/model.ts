@@ -9,3 +9,7 @@ export interface Person {
   name: string;
   lastname: string;
 }
+
+export interface Movie {
+  name: string;
+}

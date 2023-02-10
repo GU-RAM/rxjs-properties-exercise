@@ -9,5 +9,6 @@
 <div class="movies-container">
   <ul>
     <li *ngFor="let movieFound of moviesFound">{{ movieFound }}</li>
+    <li *ngIf="!moviesFound.length">Not Found</li>
   </ul>
 </div>

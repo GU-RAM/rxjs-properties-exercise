@@ -7,6 +7,7 @@ import { ScrollDownComponent } from './scroll-down/scroll-down.component';
 import { PopulateJobsPersonsComponent } from './populate-jobs-persons/populate-jobs-persons.component';
 import { FilterByInputComponent } from './filter-by-input/filter-by-input.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing-model';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     PopulateJobsPersonsComponent,
     FilterByInputComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

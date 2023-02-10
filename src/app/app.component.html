@@ -1,3 +1,18 @@
 <!-- <app-filter-by-input></app-filter-by-input> -->
 <!-- <app-scroll-down></app-scroll-down> -->
-<app-populate-jobs-persons></app-populate-jobs-persons>
+<!-- <app-populate-jobs-persons></app-populate-jobs-persons> -->
+<nav>
+  <ul>
+    <li
+      routerLink=""
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active"
+    >
+      Scroll Down
+    </li>
+    <li routerLink="/populate" routerLinkActive="active">Populate</li>
+    <li routerLink="/filter" routerLinkActive="active">Filter</li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

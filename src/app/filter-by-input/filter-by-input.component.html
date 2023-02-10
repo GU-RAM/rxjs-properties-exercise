@@ -1,0 +1,13 @@
+<div class="search-container">
+  <input
+    type="text"
+    class="search-bar"
+    [formControl]="search"
+    placeholder="Search for movies..."
+  />
+</div>
+<div class="movies-container">
+  <ul>
+    <li *ngFor="let movieFound of moviesFound">{{ movieFound }}</li>
+  </ul>
+</div>
